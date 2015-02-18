@@ -3,21 +3,21 @@
 
     #define COLOR_SH_VERSION 1.0
 
-    void w_red(char *fmt, ...);
-    void w_bred(char *fmt, ...);
-    void w_green(char *fmt, ...);
-    void w_bgreen(char *fmt, ...);
-    void w_white(char *fmt, ...);
-    void w_bwhite(char *fmt, ...);
-    void w_blue(char *fmt, ...);
-    void w_bblue(char *fmt, ...);
-    void w_purple(char *fmt, ...);
-    void w_bpurple(char *fmt, ...);
-    void w_yellow(char *fmt, ...);
-    void w_byellow(char *fmt, ...);
-    void w_cyan(char *fmt, ...);
-    void w_bcyan(char *fmt, ...);
-    void w_rewind(void);
+    void color_red(char *fmt, ...);
+    void color_bred(char *fmt, ...);
+    void color_green(char *fmt, ...);
+    void color_bgreen(char *fmt, ...);
+    void color_white(char *fmt, ...);
+    void color_bwhite(char *fmt, ...);
+    void color_blue(char *fmt, ...);
+    void color_bblue(char *fmt, ...);
+    void color_purple(char *fmt, ...);
+    void color_bpurple(char *fmt, ...);
+    void color_yellow(char *fmt, ...);
+    void color_byellow(char *fmt, ...);
+    void color_cyan(char *fmt, ...);
+    void color_bcyan(char *fmt, ...);
+    void color_rewind(void);
 
     #if defined(_WIN32)
         #include <windows.h>

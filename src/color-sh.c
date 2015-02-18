@@ -19,7 +19,7 @@
     #error Platform not supported by color-sh lib
 #endif /* _WIN32 */
 
-void w_red(char *fmt, ...) {
+void color_red(char *fmt, ...) {
     va_list ap;
     va_start(ap, fmt);
     set_color(RED);
@@ -28,7 +28,7 @@ void w_red(char *fmt, ...) {
     set_color(REWIND);
 }
 
-void w_bred(char *fmt, ...) {
+void color_bred(char *fmt, ...) {
     #if defined(__linux__) || (defined(__APPLE__) && defined(__MACH__)) || defined(__unix__)
         va_list ap;
         va_start(ap, fmt);
@@ -48,7 +48,7 @@ void w_bred(char *fmt, ...) {
     #endif
 }
 
-void w_green(char *fmt, ...) {
+void color_green(char *fmt, ...) {
     va_list ap;
     va_start(ap, fmt);
     set_color(GREEN);
@@ -57,7 +57,7 @@ void w_green(char *fmt, ...) {
     set_color(REWIND);
 }
 
-void w_bgreen(char *fmt, ...) {
+void color_bgreen(char *fmt, ...) {
     #if defined(__linux__) || (defined(__APPLE__) && defined(__MACH__)) || defined(__unix__)
         va_list ap;
         va_start(ap, fmt);
@@ -77,7 +77,7 @@ void w_bgreen(char *fmt, ...) {
     #endif
 }
 
-void w_white(char *fmt, ...) {
+void color_white(char *fmt, ...) {
     va_list ap;
     va_start(ap, fmt);
     set_color(WHITE);
@@ -86,7 +86,7 @@ void w_white(char *fmt, ...) {
     set_color(REWIND);
 }
 
-void w_bwhite(char *fmt, ...) {
+void color_bwhite(char *fmt, ...) {
     #if defined(__linux__) || (defined(__APPLE__) && defined(__MACH__)) || defined(__unix__)
         va_list ap;
         va_start(ap, fmt);
@@ -106,7 +106,7 @@ void w_bwhite(char *fmt, ...) {
     #endif
 }
 
-void w_blue(char *fmt, ...) {
+void color_blue(char *fmt, ...) {
     va_list ap;
     va_start(ap, fmt);
     set_color(BLUE);
@@ -115,7 +115,7 @@ void w_blue(char *fmt, ...) {
     set_color(REWIND);
 }
 
-void w_bblue(char *fmt, ...) {
+void color_bblue(char *fmt, ...) {
     #if defined(__linux__) || (defined(__APPLE__) && defined(__MACH__)) || defined(__unix__)
         va_list ap;
         va_start(ap, fmt);
@@ -135,7 +135,7 @@ void w_bblue(char *fmt, ...) {
     #endif
 }
 
-void w_purple(char *fmt, ...) {
+void color_purple(char *fmt, ...) {
     va_list ap;
     va_start(ap, fmt);
     set_color(PURPLE);
@@ -144,7 +144,7 @@ void w_purple(char *fmt, ...) {
     set_color(REWIND);
 }
 
-void w_bpurple(char *fmt, ...)
+void color_bpurple(char *fmt, ...)
 {
     #if defined(__linux__) || (defined(__APPLE__) && defined(__MACH__)) || defined(__unix__)
         va_list ap;
@@ -165,7 +165,7 @@ void w_bpurple(char *fmt, ...)
     #endif
 }
 
-void w_yellow(char *fmt, ...) {
+void color_yellow(char *fmt, ...) {
     va_list ap;
     va_start(ap, fmt);
     set_color(YELLOW);
@@ -174,7 +174,7 @@ void w_yellow(char *fmt, ...) {
     set_color(REWIND);
 }
 
-void w_byellow(char *fmt, ...) {
+void color_byellow(char *fmt, ...) {
     #if defined(__linux__) || (defined(__APPLE__) && defined(__MACH__)) || defined(__unix__)
         va_list ap;
         va_start(ap, fmt);
@@ -194,7 +194,7 @@ void w_byellow(char *fmt, ...) {
     #endif
 }
 
-void w_cyan(char *fmt, ...) {
+void color_cyan(char *fmt, ...) {
     va_list ap;
     va_start(ap, fmt);
     set_color(CYAN);
@@ -203,7 +203,7 @@ void w_cyan(char *fmt, ...) {
     set_color(REWIND);
 }
 
-void w_bcyan(char *fmt, ...) {
+void color_bcyan(char *fmt, ...) {
     #if defined(__linux__) || (defined(__APPLE__) && defined(__MACH__)) || defined(__unix__)
         va_list ap;
         va_start(ap, fmt);
@@ -223,6 +223,6 @@ void w_bcyan(char *fmt, ...) {
     #endif
 }
 
-void w_rewind(void) {
+void color_rewind(void) {
     set_color(REWIND);
 }
